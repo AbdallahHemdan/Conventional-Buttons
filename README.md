@@ -74,13 +74,6 @@ $ cd Conventional-Buttons
 
 Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Conventional-Buttons/blob/master/CONTRIBUTING.md) for ways to contribute.
 
-### Contributors
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/AbdallahHemdan"><img src="https://avatars1.githubusercontent.com/u/40190772?s=460&v=4" width="150px;" alt=""/><br /><sub><b>Abdallah Hemdan</b></sub></a><br /></td>
-  </tr>
- </table>
-
 ### Licence
 [MIT Licence](https://github.com/AbdallahHemdan/Conventional-Buttons/blob/master/LICENSE)
 
