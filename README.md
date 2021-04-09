@@ -47,6 +47,14 @@ $ cd Conventional-Buttons
 
 </div>
 
+## Demo of extension
+
+<div align="center">
+  
+![Conventional Comments](https://user-images.githubusercontent.com/40190772/114235205-22953700-9980-11eb-8591-e6f17a7329bd.gif)
+
+</div>
+
 ## Screenshots
 
 <div align="center">
@@ -58,6 +66,7 @@ $ cd Conventional-Buttons
 ![image](https://user-images.githubusercontent.com/40190772/114235113-fe395a80-997f-11eb-9898-5a474ec6dbbc.png)
 
 </div>
+
 
 ## Contributing
 
