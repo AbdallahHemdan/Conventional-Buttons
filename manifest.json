@@ -14,8 +14,8 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
-      "js": ["src/inject/inject.js"],
-      "css": ["src/inject/inject.css"],
+      "js": ["src/inject.js"],
+      "css": ["src/inject.css"],
       "run_at": "document_idle"
     }
   ]

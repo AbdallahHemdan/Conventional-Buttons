@@ -10,41 +10,54 @@ const semanticLabels = {
   praise: {
     text: 'praise',
     icon: trophyIcon,
-    blocking: false,
   },
-  nitpick: {
-    text: 'nitpick',
+  'nitpick-non-blocking': {
+    text: 'nitpick (non-blocking)',
     icon: searchIcon,
-    blocking: true,
   },
-  suggestion: {
-    text: 'suggestion',
+  'nitpick-blocking': {
+    text: 'nitpick (blocking)',
+    icon: searchIcon,
+  },
+  'suggestion-non-blocking': {
+    text: 'suggestion (non-blocking)',
     icon: exclamationIcon,
-    blocking: true,
   },
-  issue: {
-    text: 'issue',
+  'suggestion-blocking': {
+    text: 'suggestion (blocking)',
+    icon: exclamationIcon,
+  },
+  'issue-non-blocking': {
+    text: 'issue (non-blocking)',
     icon: bugIcon,
-    blocking: true,
   },
-  question: {
-    text: 'question',
+  'issue-blocking': {
+    text: 'issue (blocking)',
+    icon: bugIcon,
+  },
+  'question-non-blocking': {
+    text: 'question (non-blocking)',
     icon: questionIcon,
-    blocking: true,
+  },
+  'question-blocking': {
+    text: 'question (blocking)',
+    icon: questionIcon,
   },
   thought: {
     text: 'thought',
     icon: commentIcon,
-    blocking: false,
   },
-  chore: {
-    text: 'chore',
+  'chore-non-blocking': {
+    text: 'chore (non-blocking)',
     icon: homeIcon,
-    blocking: true,
+  },
+  'chore-blocking': {
+    text: 'chore (blocking)',
+    icon: homeIcon,
   },
 };
 
-const semanticCommentStructure = `**%text%decoration:** <subject>`;
+const semanticCommentStructure = `**%text:** <subject>`;
 
 const fillTextAreaValue = (textarea, value, emptySubject = true) => {
   textarea.value = value;
@@ -57,12 +70,9 @@ const fillTextAreaValue = (textarea, value, emptySubject = true) => {
   }
 };
 
-const semanticButtonClickHandler = (e, { textarea, label, blocking }) => {
+const semanticButtonClickHandler = (e, { textarea, label }) => {
   e.preventDefault();
-  const decoration = blocking ? '' : ' (non-blocking)';
-  const semanticComment = semanticCommentStructure
-    .replace('%text', semanticLabels[label].text)
-    .replace('%decoration', decoration);
+  const semanticComment = semanticCommentStructure.replace('%text', semanticLabels[label].text);
   const cleanedValue = textarea.value.replace(/\*\*\w+(\s\(non-blocking\))?:\*\*\s?/, '');
 
   if (cleanedValue && cleanedValue !== '<subject>') {
@@ -76,44 +86,37 @@ const semanticButtonClickHandler = (e, { textarea, label, blocking }) => {
   }
 };
 
-const buttonGenerator = (textarea, parent, label, blocking) => {
+const buttonGenerator = (textarea, parent, label) => {
   const button = document.createElement('button');
   button.classList.add('has-tooltip');
-  button.setAttribute('data-title', semanticLabels[label].text);
+
+  button.setAttribute('title', semanticLabels[label].text);
   button.innerHTML = semanticLabels[label].icon;
 
-  if (blocking) {
-    button.classList.add('blocking');
-    button.setAttribute('data-title', `${semanticLabels[label].text} (blocking)`);
-  }
-
-  button.addEventListener('click', e =>
-    semanticButtonClickHandler(e, { textarea, label, blocking }),
-  );
+  button.addEventListener('click', e => semanticButtonClickHandler(e, { textarea, label }));
   parent.appendChild(button);
 };
 
 const buttonPairGenerator = (textarea, parent, label) => {
   const buttonContainer = document.createElement('div');
   buttonContainer.classList.add('buttonContainer');
-  buttonGenerator(textarea, buttonContainer, label, false);
-  if (semanticLabels[label].blocking) {
-    buttonContainer.classList.add('hasBlockingButton');
-    buttonGenerator(textarea, buttonContainer, label, true);
-  }
+  buttonGenerator(textarea, buttonContainer, label);
+
   parent.appendChild(buttonContainer);
 };
 
 const addSemanticButton = element => {
-  const parent = element
-    .closest('.js-previewable-comment-form.previewable-comment-form.write-selected')
-    .querySelector(
-      '.js-details-container.Details.toolbar-commenting.d-flex.no-wrap.flex-items-start.flex-wrap.px-2.pt-2.pt-lg-0.border-md-top.border-lg-top-0',
-    );
+  const allParents = document.querySelectorAll(
+    '.comment-form-head.tabnav.d-flex.flex-justify-between.mb-2.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-primary.flex-lg-items-center.flex-lg-row',
+  );
+
+  const parent = allParents[allParents.length - 1];
   const container = document.createElement('div');
   container.id = 'conventionalCommentButtonContainer';
+  container.className = 'conventionalCommentButtonContainer';
 
   Object.keys(semanticLabels).forEach(label => {
+    console.log('label: ', label);
     buttonPairGenerator(element, container, label);
   });
   parent.classList.remove('clearfix');
@@ -126,8 +129,10 @@ setTimeout(function () {
     .querySelectorAll(
       '.form-control.input-contrast.comment-form-textarea.js-comment-field.js-paste-markdown.js-task-list-field.js-quick-submit.js-size-to-fit.js-session-resumable.js-saved-reply-shortcut-comment-field',
     )
-    .forEach(function (note) {
-      note.dataset.semanticButtonInitialized = 'true';
-      addSemanticButton(note);
+    .forEach(function (note, index, list) {
+      if (index === list.length - 1) {
+        note.dataset.semanticButtonInitialized = 'true';
+        addSemanticButton(note);
+      }
     });
 }, 1000);
