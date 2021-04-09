@@ -107,7 +107,6 @@ const buttonGenerator = (textarea, parent, label, blocking) => {
 
   if (blocking) {
     button.classList.add('blocking');
-    console.log('blocking');
     button.setAttribute('title', `${semanticLabels[label].title} (blocking)`);
   }
 
@@ -175,7 +174,6 @@ const addSemanticButton = element => {
 
 setTimeout(function () {
   document.querySelectorAll(mainContainer, auxContainer).forEach(function (note, index, list) {
-    console.log('note: ', note);
     if (index === list.length - 1) {
       note.dataset.semanticButtonInitialized = 'true';
       addSemanticButton(note);
