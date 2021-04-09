@@ -1,0 +1,72 @@
+.has-conventional-comments-buttons.comment-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.has-conventional-comments-buttons.comment-toolbar .toolbar-text {
+  margin: 0;
+}
+
+.has-conventional-comments-buttons.comment-toolbar .uploading-container {
+  float: none;
+  margin-right: 0;
+}
+
+#conventionalCommentButtonContainer {
+  display: flex;
+  align-items: flex-end;
+  margin-left:0;
+}
+
+#conventionalCommentButtonContainer .buttonContainer {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+#conventionalCommentButtonContainer .buttonContainer.hasBlockingButton:hover {
+  width: 50px;
+}
+
+#conventionalCommentButtonContainer button {
+  margin-right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #666;
+  height: 25px;
+  width: 25px;
+  outline: 0;
+}
+
+#conventionalCommentButtonContainer button svg {
+  height: 13px;
+  width: 13px;
+}
+
+#conventionalCommentButtonContainer button:hover {
+  color: #1068bf;
+}
+
+#conventionalCommentButtonContainer button:focus {
+  outline: 0;
+}
+
+.gl-dark #conventionalCommentButtonContainer button {
+  color: #999;
+}
+
+.gl-dark #conventionalCommentButtonContainer button:hover {
+  color: #63a6e9;
+}
+
+#conventionalCommentButtonContainer button.blocking {
+  color: red;
+}
+
+#conventionalCommentButtonContainer button.blocking:hover {
+  color: #f57f6c;
+}
