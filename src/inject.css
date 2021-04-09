@@ -41,7 +41,7 @@
 }
 
 .conventionalCommentButtonContainer button {
-  margin-right: 4px;
+  margin-right: 2px;
   width: 30px;
   height: 30px;
   outline: 0;
@@ -51,8 +51,8 @@
 }
 
 .conventionalCommentButtonContainer button svg {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
 }
 
 .conventionalCommentButtonContainer button:hover {
