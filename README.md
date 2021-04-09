@@ -23,7 +23,7 @@
 </div>
 
 ## About
-> **Conventional-Buttons** is a chrome extension that adds a conventional comment button to Github file explorer comments, allowing to quickly leave a structured semantic comment during your PR reviews!, Read more about conventional comments from [here](https://a-hemdan.medium.com/conventional-comments-1f83f56a7a48)
+> **Conventional-Buttons** is a chrome extension that adds a conventional comment button to Github file explorer comments, allowing to quickly leave a structured semantic comment during your PR reviews!, I wrote an article about conventional comments, you can check it from [here](https://a-hemdan.medium.com/conventional-comments-1f83f56a7a48)
 
 ## How to use
 1. **_Clone the repository_**
