@@ -22,7 +22,6 @@
   background: white;
 }
 
-
 .conventionalCommentButtonContainer .buttonContainer {
   display: flex;
   flex-direction: row;
@@ -47,8 +46,8 @@
 }
 
 .conventionalCommentButtonContainer button svg {
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
 }
 
 .conventionalCommentButtonContainer button:hover {
