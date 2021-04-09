@@ -8,37 +8,44 @@ const homeIcon = `<svg aria-hidden="true" focusable="false" data-prefix="fas" da
 
 const semanticLabels = {
   praise: {
-    text: 'praise',
+    text: 'Praise',
+    title: '👏 Praise',
     icon: trophyIcon,
     blocking: false,
   },
   nitpick: {
-    text: 'nitpick',
+    text: 'Nitpick',
+    title: '🤓 Nitpick',
     icon: searchIcon,
     blocking: true,
   },
   suggestion: {
-    text: 'suggestion',
+    text: 'Suggestion',
+    title: '🎯 Suggestion',
     icon: exclamationIcon,
     blocking: true,
   },
   issue: {
-    text: 'issue',
+    text: 'Issue',
+    title: '🐞 Issue',
     icon: bugIcon,
     blocking: true,
   },
   question: {
-    text: 'question',
+    text: 'Question',
+    title: '❔ Question',
     icon: questionIcon,
     blocking: true,
   },
   thought: {
-    text: 'thought',
+    text: 'Thought',
+    title: '💭 Thought',
     icon: commentIcon,
     blocking: false,
   },
   chore: {
-    text: 'chore',
+    text: 'Chore',
+    title: '💣 Chore',
     icon: homeIcon,
     blocking: true,
   },
@@ -79,12 +86,12 @@ const semanticButtonClickHandler = (e, { textarea, label, blocking }) => {
 const buttonGenerator = (textarea, parent, label, blocking) => {
   const button = document.createElement('button');
   button.classList.add('has-tooltip');
-  button.setAttribute('data-title', semanticLabels[label].text);
+  button.setAttribute('title', semanticLabels[label].title);
   button.innerHTML = semanticLabels[label].icon;
 
   if (blocking) {
     button.classList.add('blocking');
-    button.setAttribute('data-title', `${semanticLabels[label].text} (blocking)`);
+    button.setAttribute('title', `${semanticLabels[label].title} (blocking)`);
   }
 
   button.addEventListener('click', e =>
