@@ -82,5 +82,5 @@ Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Conven
  </table>
 
 ### Licence
-[MIT Licence](https://github.com/AbdallahHemdan/Orchestra/blob/master/LICENSE)
+[MIT Licence](https://github.com/AbdallahHemdan/Conventional-Buttons/blob/master/LICENSE)
 
