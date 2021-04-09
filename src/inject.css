@@ -12,14 +12,19 @@
   float: none;
   margin-right: 0;
 }
-
-.conventionalCommentButtonContainer {
+.conventional-main-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 8px;
   border-bottom: 1px solid #e1e4e8;
   border-radius: 6px 6px 0 0;
   background: #f6f8fa;
+}
+
+.conventionalCommentButtonContainer {
+  display: flex;
+  align-items: center;
 }
 
 .conventionalCommentButtonContainer .buttonContainer {
@@ -36,7 +41,7 @@
 }
 
 .conventionalCommentButtonContainer button {
-  margin-right: 0.5rem;
+  margin-right: 4px;
   width: 30px;
   height: 30px;
   outline: 0;
@@ -66,10 +71,36 @@
   color: #63a6e9;
 }
 
+.conventionalCommentButtonContainer button {
+  fill: #586069;
+}
+
 .conventionalCommentButtonContainer button.blocking {
   color: red;
+  fill: red;
 }
 
 .conventionalCommentButtonContainer button.blocking:hover {
   color: #f57f6c;
+}
+
+
+.conventional-title {
+  display: flex;
+  align-items: center;
+}
+
+.conventional-title-img {
+  display: flex;
+  align-items: center;
+}
+
+.conventional-title-img svg {
+  margin-right: 4px;
+  width: 22px;
+  height: 22px;
+}
+
+.conventional-title-text {
+  color: #586069;
 }
