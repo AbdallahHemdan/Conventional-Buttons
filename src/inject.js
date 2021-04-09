@@ -12,7 +12,7 @@ const choreIcon = `<svg enable-background="new 0 0 512.001 512.001" version="1.1
 
 const instabugIcon = `<svg viewBox="0 0 235.68 150.04" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="a" x1="84.2" x2="3.54" y1="62.93" y2="209.31" gradientUnits="userSpaceOnUse"><stop stop-color="#00287a" stop-opacity="0" offset="0"/><stop stop-color="#00287a" offset="1"/></linearGradient><linearGradient id="h" x1="193.71" x2="25.51" y1="60.89" y2="252.05" xlink:href="#a"/><linearGradient id="g" x1="134.83" x2="29.03" y1="33.61" y2="224.17" xlink:href="#a"/><linearGradient id="f" x1="35.85" x2="118.19" y1="93.83" y2="93.83" gradientUnits="userSpaceOnUse"><stop stop-color="#19a3ff" stop-opacity="0" offset="0"/><stop stop-color="#0e5fc1" offset="1"/></linearGradient><linearGradient id="e" x1="68.23" x2="172.05" y1="87.57" y2="77.41" gradientUnits="userSpaceOnUse"><stop stop-color="#002061" stop-opacity="0" offset="0"/><stop stop-color="#00143d" offset="1"/></linearGradient><linearGradient id="d" x1="94.87" x2="-18.63" y1="-35.29" y2="170.7" xlink:href="#a"/><linearGradient id="c" x1="121.09" x2="15.29" y1="-26.69" y2="163.87" xlink:href="#a"/><linearGradient id="b" x1="163.02" x2="104.31" y1="-.95" y2="124.96" xlink:href="#a"/></defs><title>Instabug-Logo-H_color</title><g data-name="Layer 2"><g data-name="Layer 1"><polygon points="44.27 150.04 115.11 60.3 84.63 60.3 13.75 150.04" fill="#64b5f9"/><polygon points="44.26 150.04 91.98 89.74 61.37 89.74 13.65 150.04" fill="url(#a)" opacity=".2"/><path d="M145.93,60.3,75.1,150h70.61a39.48,39.48,0,0,0,31-15l59-74.73Z" fill="#00287a"/><path d="M145.93,60.3,75.1,150h70.61a39.48,39.48,0,0,0,31-15l59-74.73Z" fill="url(#h)"/><polygon points="75.1 150.04 145.93 60.3 115.09 60.3 44.26 150.04" fill="#0098ff"/><polygon points="75.1 150.04 145.93 60.3 115.09 60.3 44.26 150.04" fill="url(#g)" opacity=".35"/><polygon points="61.37 89.74 54.92 97.91 116.26 97.91 122.69 89.74" fill="url(#f)" opacity=".8"/><path d="M174.35,60.3,163,74.73a39.46,39.46,0,0,1-31,15h-9.29l-6.43,8.17h16.59a45.63,45.63,0,0,0,36-17.45L184.78,60.3Z" fill="url(#e)" opacity=".8"/><polygon points="30.53 89.74 101.36 0 70.88 0 0 89.74" fill="#64b5f9"/><polygon points="30.53 89.74 101.36 0 70.87 0 0.04 89.74" fill="url(#d)" opacity=".2"/><polygon points="61.37 89.74 132.2 0 101.36 0 30.53 89.74" fill="#0098ff"/><polygon points="61.37 89.74 132.2 0 101.36 0 30.53 89.74" fill="url(#c)" opacity=".35"/><path d="M163,74.73,221.94,0H132.2L61.37,89.74H132A39.46,39.46,0,0,0,163,74.73Z" fill="#0e5fc1"/><path d="M163,74.73,221.94,0H132.2L61.37,89.74H132A39.46,39.46,0,0,0,163,74.73Z" fill="url(#b)" opacity=".5"/></g></g></svg>`;
 const conventionalIcon = `<svg width="512pt" height="512pt" viewBox="0 -45 512 511" xmlns="http://www.w3.org/2000/svg"><path d="m407 0.5h-302c-57.898 0-105 47.102-105 105v162.17c0 46.199 30.332 86.438 74.285 99.316l50.711 50.715c2.8164 2.8125 6.6289 4.3945 10.609 4.3945 3.9766 0 7.793-1.582 10.605-4.3945l46.52-46.523h214.27c57.898 0 105-47.102 105-105v-160.68c0-57.898-47.102-105-105-105zm75 265.68c0 41.355-33.645 75-75 75h-220.48c-3.9766 0-7.793 1.582-10.605 4.3945l-40.309 40.309-42.93-42.93c-1.9258-1.9258-4.3398-3.293-6.9844-3.9492-32.789-8.1602-55.691-37.492-55.691-71.332v-162.17c0-41.355 33.645-75 75-75h302c41.355 0 75 33.645 75 75z"/><path d="m351.24 144.33h-190.48c-8.2852 0-15 6.7188-15 15 0 8.2852 6.7148 15 15 15h190.48c8.2852 0 15-6.7148 15-15 0-8.2812-6.7148-15-15-15z"/><path d="m351.24 197.35h-190.48c-8.2852 0-15 6.7148-15 15 0 8.2852 6.7148 15 15 15h190.48c8.2852 0 15-6.7148 15-15 0-8.2852-6.7148-15-15-15z"/></svg>`;
-
+const ideaIcon = `<svg class="octicon octicon-light-bulb color-text-secondary" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"></path></svg>`;
 /**
  * & List of all the conventional item/labels and its associated items
  */
@@ -63,6 +63,8 @@ const semanticLabels = {
 
 const mainContainer =
   '.form-control.input-contrast.comment-form-textarea.js-comment-field.js-paste-markdown.js-task-list-field.js-quick-submit.js-size-to-fit.js-session-resumable.js-saved-reply-shortcut-comment-field';
+const auxContainer =
+  '.form-control.input-contrast.comment-form-textarea.js-comment-field.js-paste-markdown.js-task-list-field.js-quick-submit.js-session-resumable.js-saved-reply-shortcut-comment-field';
 const semanticCommentStructure = `**%text%decoration:** <subject>`;
 
 const fillTextAreaValue = (textarea, value, emptySubject = true) => {
@@ -76,9 +78,11 @@ const fillTextAreaValue = (textarea, value, emptySubject = true) => {
   }
 };
 
+const onlyNonBlocking = ['praise', 'thought'];
+
 const semanticButtonClickHandler = (e, { textarea, label, blocking }) => {
   e.preventDefault();
-  const decoration = blocking ? '' : ' (non-blocking)';
+  const decoration = blocking ? '' : onlyNonBlocking.includes(label) ? '' : ' (non-blocking)';
   const semanticComment = semanticCommentStructure
     .replace('%text', semanticLabels[label].text)
     .replace('%decoration', decoration);
@@ -103,6 +107,7 @@ const buttonGenerator = (textarea, parent, label, blocking) => {
 
   if (blocking) {
     button.classList.add('blocking');
+    console.log('blocking');
     button.setAttribute('title', `${semanticLabels[label].title} (blocking)`);
   }
 
@@ -129,6 +134,7 @@ const buttonPairGenerator = (textarea, parent, label) => {
 const addSemanticButton = element => {
   const allParents = document.querySelectorAll(
     '.js-previewable-comment-form.previewable-comment-form.write-selected',
+    '.js-previewable-comment-form.js-suggested-changes-container.previewable-comment-form.write-selected',
   );
 
   const parent = allParents[allParents.length - 1];
@@ -144,13 +150,14 @@ const addSemanticButton = element => {
   title.className = 'conventional-title';
 
   const conventionalImg = document.createElement('div');
-  conventionalImg.innerHTML = conventionalIcon;
+  conventionalImg.innerHTML = ideaIcon;
   conventionalImg.className = 'conventional-title-img';
 
   const conventionalTitle = document.createElement('h3');
   conventionalTitle.innerText = 'Conventional Comments';
   conventionalTitle.className = 'conventional-title-text';
 
+  title.appendChild(conventionalImg);
   title.appendChild(conventionalTitle);
 
   Object.keys(semanticLabels).forEach(label => {
@@ -167,7 +174,8 @@ const addSemanticButton = element => {
 };
 
 setTimeout(function () {
-  document.querySelectorAll(mainContainer).forEach(function (note, index, list) {
+  document.querySelectorAll(mainContainer, auxContainer).forEach(function (note, index, list) {
+    console.log('note: ', note);
     if (index === list.length - 1) {
       note.dataset.semanticButtonInitialized = 'true';
       addSemanticButton(note);
